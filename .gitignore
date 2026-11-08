@@ -1,0 +1,58 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Credentials & Secrets (NEVER COMMIT SENSITIVE KEYS)
+credentials.json
+client_secret*.json
+token.json
+google_photos_token.json
+last_picker_session.json
+*.env
+.env
+config.json
+.summithill-credentials.json
+summithill-credentials.json
+
+# Staged & Processed Media Workspaces
+media_workspace/
+Exported_9x16_Shorts/
+Phone_Raw_Inbox/
+Processed_Originals_Archive/
+Curated_Best_Photos/
+Protected_Private_Vault/
+ALL_BOTS_MEDIA_INBOX/
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+!docs/images/*
+!assets/images/*
+
+# Logs & Ledgers
+*.log
+processed_media_ledger.json
+dispatched_*.json
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

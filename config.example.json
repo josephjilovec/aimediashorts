@@ -1,0 +1,30 @@
+{
+  "pipeline": {
+    "desktop_workspace_dir": "",
+    "gdrive_inbox_dir": "",
+    "auto_delete_local_originals_after_routing": true,
+    "auto_delete_gdrive_inbox_after_pull": true,
+    "max_curated_photos_per_batch": 8,
+    "scan_interval_minutes": 15
+  },
+  "ollama": {
+    "base_url": "http://127.0.0.1:11434",
+    "vision_model": "gemma4:e2b"
+  },
+  "google_oauth": {
+    "client_id": "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com",
+    "client_secret": "YOUR_GOOGLE_CLIENT_SECRET",
+    "project_id": "your-google-cloud-project-id",
+    "refresh_token": ""
+  },
+  "vocabulary_guard": {
+    "enabled": true,
+    "banned_words": ["kill", "killer", "killers", "killed", "killing", "kills"]
+  },
+  "privacy_and_pr_shield": {
+    "enabled": true,
+    "max_center_skin_ratio": 0.48,
+    "max_overall_skin_ratio": 0.42,
+    "run_local_vision_pr_check": true
+  }
+}
