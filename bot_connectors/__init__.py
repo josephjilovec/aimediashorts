@@ -8,6 +8,7 @@ from .twitter_x import TwitterXConnector
 from .facebook import FacebookConnector
 from .bluesky import BlueskyConnector
 from .mastodon import MastodonConnector
+from .tumblr import TumblrConnector
 
 __all__ = [
     "BaseSocialMediaConnector",
@@ -15,4 +16,5 @@ __all__ = [
     "FacebookConnector",
     "BlueskyConnector",
     "MastodonConnector",
+    "TumblrConnector",
 ]

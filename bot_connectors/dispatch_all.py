@@ -18,6 +18,7 @@ from bot_connectors.twitter_x import TwitterXConnector
 from bot_connectors.facebook import FacebookConnector
 from bot_connectors.bluesky import BlueskyConnector
 from bot_connectors.mastodon import MastodonConnector
+from bot_connectors.tumblr import TumblrConnector
 
 logger = logging.getLogger("UnifiedDispatcher")
 
@@ -39,6 +40,7 @@ def dispatch_all(dry_run: bool = False, max_per_network: int = 5):
         FacebookConnector(dry_run=dry_run),
         BlueskyConnector(dry_run=dry_run),
         MastodonConnector(dry_run=dry_run),
+        TumblrConnector(dry_run=dry_run),
     ]
 
     summary = {}
